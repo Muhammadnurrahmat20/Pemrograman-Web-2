@@ -48,10 +48,10 @@ $programmer_python = array("Andi","Fatma","Fadli","Haris","Baco");
       echo "Daftar mahasiswa yang masuk kelompok Programmer PHP dan Programmer Python sekaligus : ";
       $php_dan_python = array_intersect ($programmer_python, $programmer_php);
       echo "<ul>";
-      foreach ($php_dan_python as $data)
-      {
-         echo "<li>".$data."</li>";
-      }
+         foreach ($php_dan_python as $data)
+         {
+            echo "<li>".$data."</li>";
+         }
       echo "</ul>";
 
 // F
