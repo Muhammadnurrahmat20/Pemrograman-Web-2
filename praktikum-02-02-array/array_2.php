@@ -56,7 +56,7 @@ $programmer_python = array("Andi","Fatma","Fadli","Haris","Baco");
 
 // F
       echo "Daftar seluruh mahasiswa yang masuk kelompok Programmer PHP atau Programmer Python.Satukan terlebih dahulu data dari kedua variabel array dengan teknik merge : ";
-      $semua = array_merge ($programmer_php, $programmer_python);
+      $semua = array_unique (array_merge ($programmer_php, $programmer_python));
       echo "<ul>";
          sort($semua);
             foreach ($semua as $data)
