@@ -8,34 +8,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"crossorigin="anonymous" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="row mt-3">
-          <div class="card text-center">
-            <div class="card-header">
-              <h1>OPERATOR ARITMATIKA</h1>
-              <p>20202205088 - Muhammad Nur Rahmat</p>
+  <div class="container">
+    <div class="row">
+      <div class="row mt-3">
+        <div class="card text-center">
+          <div class="card-header">
+            <h1>OPERATOR ARITMATIKA</h1>
+            <p>20202205088 - Muhammad Nur Rahmat</p>
               <?php
-                date_default_timezone_get('Asia/Makassar');
-                echo date ('l, d-m-Y H:i:s');
+                date_default_timezone_set ('Asia/Makassar');
+                echo date ('l, d F Y H:i:s');
               ?>
-           </div>
-          <form action="" method="post">
-            <div class="row mb-3">
-              <label for="inputnumber3"class="col-sm-3 col-form-label">Angka Pertama</label>
-              <div class="col-sm-9">
-                <input type="number"class="form-control"id="inputnumber3"name="txtangka1">
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row mb-3">
+                <label for="inputnumber3"class="col-sm-3 col-form-label">Angka Pertama</label>
+                <div class="col-sm-9">
+                  <input type="number"class="form-control"id="inputnumber3"name="txtangka1">
+                </div>
               </div>
-            </div>
-            <div class="row mb-3">
-              <label for="inputnumber3"class="col-sm-3 col-form-label">Angka Kedua</label>
-              <div class="col-sm-9">
-               <input type="number"class="form-control"id="inputnumber3"name="txtangka2">
+              <div class="row mb-3">
+                  <label for="inputnumber3"class="col-sm-3 col-form-label">Angka Kedua</label>
+                <div class="col-sm-9">
+                  <input type="number"class="form-control"id="inputnumber3"name="txtangka2">
+                </div>
               </div>
-            </div>
-            <button type="submit" class="btn btn-success">HITUNG</button>
-          </form>
-        </div>
+              <button type="submit" class="btn btn-success">HITUNG</button>
+            </form>
+          </div>
       </div>
     </div>
   </div>
