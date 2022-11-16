@@ -100,8 +100,7 @@
               </div>
             </div>
               <button type="submit" class="btn btn-success">HITUNG</button>
-              
-            <div class="row mt-3">
+              <p>
               <?php
                $a_pertama = isset ($_POST["n_pertama"]) ? $_POST["n_pertama"] : "";
                $a_kedua = isset ($_POST["n_kedua"]) ? $_POST["n_kedua"] : "";
@@ -120,15 +119,15 @@
 
                }
                else{
-                 echo "Hasil Penjumlahan = ".($a_pertama + $a_kedua)."<br>";
-                 echo "Hasil Pengurangan = ".($a_pertama - $a_kedua)."<br>";
-                 echo "Hasil Perkalian = ".($a_pertama * $a_kedua)."<br>";
-                 echo "Hasil Pembagian = ".($a_pertama / $a_kedua)."<br>";
-                 echo "Sisa Hsail Bagi = ".($a_pertama % $a_kedua)."<br>";
+                 echo "<h3>Hasil Operasi Aritmatika</h3>";
+                 echo "# Hasil Penjumlahan = ".($a_pertama + $a_kedua)."<br>";
+                 echo "# Hasil Pengurangan = ".($a_pertama - $a_kedua)."<br>";
+                 echo "# Hasil Perkalian = ".($a_pertama * $a_kedua)."<br>";
+                 echo "# Hasil Pembagian = ".($a_pertama / $a_kedua)."<br>";
+                 echo "# Sisa Hsail Bagi = ".($a_pertama % $a_kedua)."<br>";
                }
               ?>
-              
-            </div>
+            
           </form>
         </div>
       </div>
