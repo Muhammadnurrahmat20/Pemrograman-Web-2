@@ -106,17 +106,16 @@
                $a_kedua = isset ($_POST["n_kedua"]) ? $_POST["n_kedua"] : "";
                if (empty($a_pertama))
                {
-                 echo '<div class="alert alert-danger d-flex align-items-center">Angka pertama tidak boleh kososng </div>';
+                 echo '<div class="alert alert-danger text-center">Angka pertama tidak boleh kososng </div>';
                }
                else if (empty($a_kedua))
                {
-                 echo '<div class="alert alert-danger d-flex align-items-center">Angka kedua tidak boleh kososng </div>';
+                 echo '<div class="alert alert-danger text-center">Angka kedua tidak boleh kososng </div>';
 
                }
                else if ($a_pertama < $a_kedua )
                {
-                 echo '<div class="alert alert-danger d-flex align-items-center">Angka pertama harus lebih besar dari pada angka kedua </div>';
-
+                 echo '<div class="alert alert-danger text-center">Angka pertama harus lebih besar dari pada angka kedua </div>';
                }
                else{
                  echo "<h3>Hasil Operasi Aritmatika</h3>";
