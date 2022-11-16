@@ -10,7 +10,7 @@
   <body>
   <div class="container">
     <div class="row">
-      <div class="row mt-3">
+      <div class="row mt-3 col-md-6 offset-3">
         <div class="text-center">
           <h1>OPERATOR ARITMATIKA</h1>
           <p>20202205088 - Muhammad Nur Rahmat</p>
