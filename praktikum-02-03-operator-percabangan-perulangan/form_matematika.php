@@ -11,10 +11,9 @@
   <div class="container">
     <div class="row">
       <div class="row mt-3">
-        <div class="card">
-          <div class="card text-center">
-            <h1>OPERATOR ARITMATIKA</h1>
-            <p>20202205088 - Muhammad Nur Rahmat</p>
+        <div class="text-center">
+          <h1>OPERATOR ARITMATIKA</h1>
+          <p>20202205088 - Muhammad Nur Rahmat</p>
 
             <?php
               $hari = date ("l");
@@ -85,51 +84,52 @@
               echo $hari.date (", d "),$bulan.date(" Y H:i:s");
             ?>
 
-          </div>
-          <div class="card-body">
-            <form action="form_matematika.php" method="post">
-              <div class="row mb-3">
-                  <label for="inputnumber3"class="col-sm-3 col-form-label">Angka Pertama</label>
-                <div class="col-sm-9">
-                  <input type="number"class="form-control"id="inputnumber3"name="txtangka1">
-                </div>
+        </div>
+        <div class="card-body">
+          <form action="form_matematika.php" method="post"> 
+            <div class="row mb-3">
+              <label for="inputnumber3"class="col-sm-3 col-form-label">Angka Pertama</label>
+              <div class="col-sm-9">
+                <input type="number"class="form-control"id="inputnumber3"name="n_pertama">
               </div>
-              <div class="row mb-3">
-                  <label for="inputnumber3"class="col-sm-3 col-form-label">Angka Kedua</label>
-                <div class="col-sm-9">
-                  <input type="number"class="form-control"id="inputnumber3"name="txtangka2">
-                </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputnumber3"class="col-sm-3 col-form-label">Angka Kedua</label>
+              <div class="col-sm-9">
+                <input type="number"class="form-control"id="inputnumber3"name="n_kedua">
               </div>
+            </div>
               <button type="submit" class="btn btn-success">HITUNG</button>
-              <p>
+              
+            <div class="row mt-3">
               <?php
-               $pertama = isset ($_POST["pertama"]) ? $_POST["pertama"] : "";
-               $kedua = isset ($_POST["kedua"]) ? $_POST["kedua"] : "";
-               if (empty($pertama))
+               $a_pertama = isset ($_POST["n_pertama"]) ? $_POST["n_pertama"] : "";
+               $a_kedua = isset ($_POST["n_kedua"]) ? $_POST["n_kedua"] : "";
+               if (empty($a_pertama))
                {
-                 echo '<div class="alert alert-danger" role="alert">Angka Pertama Tidak Boleh Kososng </div>';
+                 echo '<div class="alert alert-danger d-flex align-items-center">Angka pertama tidak boleh kososng </div>';
                }
-               else if (empty($kedua))
+               else if (empty($a_kedua))
                {
-                 echo '<div class="alert alert-danger" role="alert">Angka Kedua Tidak Boleh Kososng </div>';
+                 echo '<div class="alert alert-danger d-flex align-items-center">Angka kedua tidak boleh kososng </div>';
 
                }
-               else if ($pertama < $kedua )
+               else if ($a_pertama < $a_kedua )
                {
-                 echo '<div class="alert alert-danger" role="alert">Angka Pertama Tidak Boleh lebih kecil daripada angka kedua </div>';
+                 echo '<div class="alert alert-danger d-flex align-items-center">Angka pertama harus lebih besar dari pada angka kedua </div>';
 
                }
                else{
-                 echo "Hasil Penjumlahan = ".($pertama + $kedua)."<br/>";
-                 echo "Hasil Pengurangan = ".($pertama - $kedua)."<br/>";
-                 echo "Hasil Perkalian = ".($pertama * $kedua)."<br/>";
-                 echo "Hasil Pembagian = ".($pertama / $kedua)."<br/>";
-                 echo "Sisa Hsail Bagi = ".($pertama % $kedua)."<br/>";
+                 echo "Hasil Penjumlahan = ".($a_pertama + $a_kedua)."<br>";
+                 echo "Hasil Pengurangan = ".($a_pertama - $a_kedua)."<br>";
+                 echo "Hasil Perkalian = ".($a_pertama * $a_kedua)."<br>";
+                 echo "Hasil Pembagian = ".($a_pertama / $a_kedua)."<br>";
+                 echo "Sisa Hsail Bagi = ".($a_pertama % $a_kedua)."<br>";
                }
               ?>
-              </p>
-            </form>
-          </div>
+              
+            </div>
+          </form>
         </div>
       </div>
     </div>
