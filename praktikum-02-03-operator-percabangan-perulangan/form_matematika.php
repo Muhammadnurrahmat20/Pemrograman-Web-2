@@ -126,7 +126,6 @@
                  echo "# Sisa Hsail Bagi = ".($a_pertama % $a_kedua)."<br>";
                }
               ?>
-            
           </form>
         </div>
       </div>
