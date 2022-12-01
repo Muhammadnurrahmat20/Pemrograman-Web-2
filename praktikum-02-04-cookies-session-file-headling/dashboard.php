@@ -18,7 +18,7 @@
 
                            echo $_SESSION["user"],"<br>";
                         ?> 
-                    <button type="button" class="btn btn-danger" id="logout" name="logout">LOGOUT</button>
+                    <button type="button" class="btn btn-danger" id="out" name="logout">LOGOUT</button>
                 </form>
             </div>
         </div>

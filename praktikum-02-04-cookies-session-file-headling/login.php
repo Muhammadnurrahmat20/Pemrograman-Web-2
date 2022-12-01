@@ -34,7 +34,7 @@
     <?php
       session_start();
 
-      $_SESSION["user"] = "rahmat";
+      $_SESSION["user"] = "Nama Pengguna = Muhammad Nur Rahmat";
       $_SESSION["pass"] = 12345;
     ?>
   </div>
