@@ -11,32 +11,44 @@
   <div class="container">
     <div class="row">
       <div class="row mt-3 col-md-6 offset-3">
-        <div class="text-center">
-          <h2>Form Login</h2>
+        <div class="header text-center">
+          <h1>Form Login</h1>
         </div>
-        <form action="dashboard.php" method=""> 
+        <form action="login.php" method="post"> 
           <div class="row mb-3">
-              <label for="inputname3"class="col-sm-3 col-form-label">Usernmae</label>
+              <label class="col-sm-3 col-form-label">Usernmae</label>
             <div class="col-sm-9">
-              <input type="username"class="form-control"id="inputname3">
+              <input type="text" class="form-control" id="username" name="inputUsername">
             </div>
           </div>
           <div class="row mb-3">
-              <label for="inputpassword3"class="col-sm-3 col-form-label">Password</label>
+              <label class="col-sm-3 col-form-label">Password</label>
             <div class="col-sm-9">
-              <input type="password"class="form-control"id="inputpassword3">
+              <input type="password" class="form-control" id="password" name="inputPassword">
             </div>
           </div>
-            <button type="submit" class="btn btn-success" id="submit" name="login">Login</button>
+          <?php
+           session_start();
+           $inputUsername = 'rahmat';
+           $inputPassword = '20202205088';
+           if (isset($_POST['login'])) 
+           {
+               if ($_POST['inputUsername'] == $inputUsername && $_POST['inputPassword'] == $inputPassword)
+               {
+                   $_SESSION["inputUsername"] = $inputUsername; 
+                   header("location: dashboard.php");
+                   echo "Nama Pangguna = ".$_SESSION["inputUsername"];
+               } 
+               else 
+               {   
+                   echo "<p>Username Atau Password Salah </p>";
+               }
+           }  
+          ?>
+            <button type="submit" class="btn btn-success" name="login" value="login">Login</button>
         </form>
       </div>
     </div>
-    <?php
-      session_start();
-
-      $_SESSION["user"] = "Nama Pengguna = Muhammad Nur Rahmat";
-      $_SESSION["pass"] = 12345;
-    ?>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
   </body>
