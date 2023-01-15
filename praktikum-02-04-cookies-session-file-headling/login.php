@@ -46,9 +46,9 @@
                 }
                 }   
             ?>
-            <button type="submit" class="btn btn-success" name="login" value="login"> Login </button>
-          </form>
-       </div>
+
+          <button type="submit" class="btn btn-success" name="login" value="login"> Login </button>
+        </form>
      </div>
   </div>
 </div>
