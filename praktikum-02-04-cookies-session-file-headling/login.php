@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-md-6 offset-3">
         <div class="header text-center">
-          <h3> Form  Login </h3> 
+          <h2> Form  Login </h2> 
         </div>   
         <form action="login.php" method="post">
           <div class="row mb-3">
