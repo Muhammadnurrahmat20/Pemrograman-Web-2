@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-md-6 offset-3">
                 <div class="header text-center">
-                    <h2>Halaman Dashboard</h2> 
+                    <h3> Halaman Dashboard</h3> 
                     <p> 
                     <?php
                         session_start();
@@ -28,7 +28,8 @@
                         ?>
                         
                     </p>
-                </div>                
+                </div>   
+                    
                 <div class="text-center">
                     <a href='logout.php'><button type="submit" class="btn btn-danger" > Logout </button></a>
                 </div>
